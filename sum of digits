@@ -1,0 +1,14 @@
+//Write a PHP program to print sum of digits.
+
+//CODE:
+
+<?PHP
+$no1=32;
+$temp=$no1;
+$sum=0;
+while($no1!=0){
+	$sum+=$no1%10;
+	$no1=$no1/10;
+}
+echo "<h1>Sum of digit ".$temp." is ".$sum."</h1>";
+?>
