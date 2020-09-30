@@ -1,0 +1,21 @@
+//Insert a new item in last position.
+<?php
+	$num = array(30,32,43,67,76);
+	$arrlen = count($num);
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b>Array Before Inserting the Element: </b><br/>";
+	for($i = 0; $i<$arrlen; $i++) {
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+	for($i = $arrlen; $i>=$arrlen; $i--) {
+		$num[$i] = $num[$i-1];
+	}
+	$num[$arrlen] = 98;
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b><br>Array After Inserting the Element at Last Position: </b><br/>";
+	for($i = 0; $i<$arrlen+1; $i++){
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+?>
