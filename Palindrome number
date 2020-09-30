@@ -1,0 +1,19 @@
+//Write a PHP program to check palindrome number.
+
+//CODE:
+
+<?PHP
+$no = 212;
+$ans=0;
+$temp=$no;
+while($no>0){
+	$r=$no%10;
+	$ans=$ans*10+$r;
+	$no=(int)($no/10);
+}
+if($ans==$temp){
+	echo "<h1>Number ".$temp." is palindrom</h1>";
+}
+else{
+	echo "<h1>Number ".$temp." is not palindrom</h1>";
+}
