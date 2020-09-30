@@ -1,0 +1,90 @@
+//•	Write a PHP program to demonstrate the use of all inbuilt Date & Time functions with their purpose, syntax and examples.
+//CODE:
+<?php
+echo "-----------------------------------------------------------------------------------------<br>“;
+	//date function 
+	echo date("l")."<br>";
+echo "-----------------------------------------------------------------------------------------<br>“;
+	//it will print current day  
+	echo date("d-m-y")."<br>";
+	//it will print date   
+echo "-----------------------------------------------------------------------------------------<br>“;
+
+	//it will print date in textual form   
+	echo date("F")."<br>";
+	
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//full reprensenta of month  
+
+	echo date("z")."<br>";
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//it will print day of the year        
+	echo 'date("W")';
+	echo date("W")."<br>";
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//it will print week number of the year  
+	echo 'date("t")';
+	echo date("t")."<br>";
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//it will total number of days in current month
+	echo 'date("L")';
+	echo date("L")."<br>";
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//it will print 1 if leap year otherwise it will print 0   
+	echo 'date("o")';
+	echo date("o")."<br>";
+	
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//it will print current year 
+	echo date("j")."<br>";
+	
+echo "-----------------------------------------------------------------------------------------<br>“;	
+	//it will print day of the month without leading zeros  
+	echo 'date("w")';
+	echo date("w")."<br>";
+	
+echo "---------------------------------------------------------------------------------------<br>“;	
+	//it will print 0 for sunday,1 for monday (0 to 6)=>(sunday to saturday) 
+	echo date("g-i-s-a")."<br>";
+	
+echo "---------------------------------------------------------------------------------------<br>“;	
+	//it will print time in 12-hour format if you want to print am or pm in    
+	// capital than use "A" and if you want to print hour like 01 or 05 than use "h"   
+	echo date("G-i-s")."<br>";
+	
+echo "---------------------------------------------------------------------------------------<br>“;	
+	//it will print time in 24-hour format and if you want to  print hour like 
+	// 01 or 08  than use "H"
+	echo date("e")."<br>";
+	
+echo "---------------------------------------------------------------------------------------<br>“;	
+	// it is timezone identifier 
+	echo date("B")."<br>";
+	
+echo "---------------------------------------------------------------------------------------<br>“;	
+	//it will swatch internet time 
+	//getdate function
+	print_r(getdate());
+	
+	
+echo "-<br>--------------------------------------------------------------------------------------<br>“;
+	//checkdate function
+	echo "var_dump()";
+	var_dump(checkdate(12,31,-32));   
+	echo "<br>";  
+	var_dump(checkdate(2,29,2021));   
+	echo "<br>";   
+	var_dump(checkdate(2,29,2016));   
+	echo "<br>";   
+	var_dump(checkdate(1,25,2014));   
+	
+echo "<br>---------------------------------------------------------------------------------------<br>“;
+	//time function
+	echo "time()";
+	echo time()."<br>";   
+	
+echo "---------------------------------------------------------------------------------------<br>“;
+	//mktime function
+	echo mktime(0,0,0,8,7,2020)."<br>";   
+	echo mktime(0,0,0,8,7,2021)."<br>";  
+?>
