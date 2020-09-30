@@ -1,0 +1,15 @@
+//Write a PHP program to reverse given string.
+
+//CODE:
+
+<?PHP
+$str="khushi";
+$rev=" ";
+echo "<h1>Before reverse ".$str;
+echo "</br></br>After reverse ";
+$len=strlen($str);
+for($i=$len;$i>=0;$i--)
+{
+$rev.=$str[$i];
+}
+echo $rev."</h1>";
