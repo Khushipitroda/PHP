@@ -1,0 +1,18 @@
+//Write a PHP function to take height and base length of triangles default arguments, if user passes specific height and base length than consider that otherwise consider default values .
+
+CODE:
+<?php
+function area($length=6,$width=4){
+	$ans = ($length*$width)/2;
+	echo "<h1>AREA=".$ans."</br></h1>";
+}
+$a=30;
+$b=43;
+echo "<h1>-------------------------------------------------------------</br></h1>Function with two arguments:";
+area($a,$b);
+
+echo "<h1>------------------------------------------------------------------------------</br></h1>Function with one arguments:";
+area($a);
+
+echo "<h1>------------------------------------------------------------------------------</br></h1>Function with no arguments:";
+area();
