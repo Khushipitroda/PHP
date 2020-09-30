@@ -1,0 +1,29 @@
+//Write a PHP program to design simple calculator using switch-case control.
+
+//CODE:
+
+<?php
+<?php
+echo "<h1>";
+$no1=21;
+$no2=54;
+$char="/";
+switch($char){
+	case"/": if($no2==0){
+					echo"not divisable";}
+					else{
+					$ans=$no1/$no2;
+					echo"Answer Division = ".$ans;}
+					break;
+	case"+":$ans=$no1+$no2;
+					echo"Answer Sumation= ".$ans;
+					break;
+	case"-":$ans=$no1-$no2;
+					echo"Answer Subtraction = ".$ans;
+					break;
+	case"*":$ans=$no1*$no2;
+					echo"Answer Multiplication= ".$ans;
+					break;
+	default:echo"invalid input";
+}
+echo "</h1>";
