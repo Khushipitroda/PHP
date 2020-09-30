@@ -1,0 +1,22 @@
+//•	Delete an element from the above array. After deleting the element, integer keys must be normalized.
+<?php
+	$num = array(30,32,43,67,76);
+	$arrlen = count($num);
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b>Array Before Deleting the Element: </b><br/>";
+	for($i = 0; $i< $arrlen; $i++) {
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "\n<b><br>Array After Deleting an Element at position 4 :</b><br/>";
+	for($i = 3; $i< count($num)-1; $i++) {
+		$num[$i] = $num[$i+1];
+	}
+	$num--;
+	for($i = 0; $i< count($num)-1; $i++){
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+	echo "<br>";
+?>
