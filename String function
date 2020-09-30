@@ -1,0 +1,142 @@
+//	Write a PHP program to demonstrate the use of all inbuilt String functions with their purpose, syntax and examples.
+
+//CODE:
+<?php
+//String function
+echo “-------------------------------------------------------------------------------<br>“;
+echo "chr()	<br>";
+//Returns a character from a specified ASCII value.
+echo chr(52) . "<br>"; // Decimal value
+echo chr(052) . "<br>"; // Octal value
+echo chr(0x52) . "<br>"; // Hex value
+echo “-------------------------------------------------------------------------------<br>“;
+echo "ord()<br>";
+//	Returns the ASCII value of the first character of a string
+echo ord("h")."<br>";
+echo ord("Khushi")."<br>";
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strtolower()<br>";
+//Converts a string to lowercase letters
+echo strtolower("Khushi Pitroda");
+echo "</br>";
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strtoupper()	<br>";
+//Converts a string to uppercase letters
+echo strtoupper("Khushi Pitroda");
+echo "</br>";
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strlen()<br>";
+// function returns the length of the given string 
+$a="Hello"; 
+ echo strlen("Khushi")."<br>";   
+ echo strlen($a)."<br>";
+echo “-------------------------------------------------------------------------------<br>“;
+echo "ltrim()<br>";
+ // functions strip whitespace or other characters from the beginning of the string   
+ $a="Khushi    Pitroda   ";   
+ echo "Length of the string before ltrim:- ".strlen($a)."<br>";   
+ echo "Length of the string after ltrim:- ".strlen(ltrim($a))."<br>";   
+
+echo “-------------------------------------------------------------------------------<br>“;
+echo "rtrim()<br>";
+ //rtrim() functions strip whitespace from the end of the string   
+  $a="Khushi    Pitroda   ";     
+ echo "Length of the string before rtrim:- ".strlen($a)."<br>";   
+ echo "Length of the string after rtrim:- ".strlen(rtrim($a))."<br>";   
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "trim()<br>";
+ //trim() function removes from the beginning and from the end of the string    
+$a="Khushi    Pitroda   ";  
+echo "Length of the string before trim:- ".strlen($a)."<br>";   
+echo "Length of the string after trim:- ".strlen(trim($a))."<br>";   
+
+echo “-------------------------------------------------------------------------------<br>“;
+echo "substr()<br>";
+ //substr() function return a part of string   
+$a="Khushi    Pitroda   ";  
+ echo substr($a,7)."<br>";   
+ echo substr($a,13)."<br>";   
+ echo substr($a,1)."<br>";   
+ echo substr($a,-7)."<br>";   
+ echo substr($a,-1)."<br>";   
+ echo substr($a,-15)."<br>";   
+ echo substr($a,1,4)."<br>";   
+ echo substr($a,0,5)."<br>";   
+ echo substr($a,4,3)."<br>";   
+ echo substr($a,0,-2)."<br>"; 
+ echo substr($a,-9,-5)."<br>";
+ echo substr($a,-3,1)."<br>"; 
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strcmp()<br>";
+ /*strcmp() funtion compares two strings and it returns integer values   
+If str1 is less than str2 it returns<0  
+If str1 is greater than sttr2 it returns>0  
+If both the strings are equal than it return 0  
+strcmp() is case sensitive  */
+ echo strcmp("happy","y")."<br>";  
+ echo strcmp("GGp","Gpg")."<br>"; 
+ echo strcmp("p","p")."<br>";  
+ echo strcmp("k","K")."<br>";  
+ echo strcmp("Khushi","khushi")."<br>";
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strpos()<br>";
+ // strpos() function is used to find the first occurrence of the string inside another string and it 
+ // is case-sensitive   
+ echo strpos("hi how are you,hi i am Khushi","ush")."<br>";   
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strrpos()<br>";
+ // strrpos() function is used to find the last occurrence of the string inside another string and it
+ // is case-sensitive   
+ echo strrpos("hi how are you,hi i am Khushi","hi")."<br>";   
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "stripos()<br>";
+ // stripos() function is used to find the first occurrence of the string inside another string and it 
+ // is case-insensitive   
+ echo stripos("hi how are you,hi i am fine","HI")."<br>";   
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strripos()<br>";
+ // strripos() function is used to find the last occurrence of the string inside another string and it 
+ // is case-insensitive   
+ echo strripos("hi how are you,hi i am Khushi","hI")."<br>";   
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strstr()<br>";
+ //strstr() function searches for the first occurrence of a string inside another string and it is
+ //case-sensitive   
+ echo strstr("Khushi Pitroda!","Khushi")."<br>";   
+ echo strstr("Khushi!,Khushi Pitroda","Pitroda")."<br>";   
+ echo strstr("Hello Khushi!",101)."<br>";   
+ echo strstr("Hello Happy!","Happy",true)."<br>";
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "stristr()<br>";
+ // it will return the part of the string before the first occurence of the string   
+ //stristr() function searches for the first occurrence of a string inside another string and it is
+ //case-insensitive   
+ echo stristr("Khushi Pitroda!","Khushi")."<br>";   
+ echo stristr("Khushi!,Khushi Pitroda","Pitroda")."<br>";   
+ echo stristr("Hello Khushi!",101)."<br>";   
+ echo stristr("Hello Happy!","Happy",true)."<br>";
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "strrev()<br>";
+ // it will return the part of the string before the
+ // first occurence of the string   
+ //strrev() function is used to reverse the string   
+ echo strrev("Hi,How are you, I'm khushi")."<br>";   
+ 
+echo “-------------------------------------------------------------------------------<br>“;
+echo "str_replace()<br>";
+ //str_replace() function is replaces some characters with some other characters in a string.Case sensitive    
+ echo str_replace("happy","Khushi","happy pitroda");   
+ 
+echo "</br>-------------------------------------------------------------------------<br>";
+echo "str_ireplace()<br>";
+ //str_ireplace() function is replaces some characters with some other characters in a string.Case insensitive    
+ echo str_ireplace("happy","Khushi","happy pitroda");
