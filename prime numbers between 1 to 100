@@ -1,0 +1,22 @@
+//Write a PHP program to display prime numbers between 1 to 100.
+
+//CODE:
+
+<?PHP
+
+for($i = 2; $i < 100; $i++){
+	$f=0;
+	for($k = 2; $k <= $i/2; $k++){
+		if($i%$k==0){
+			$f=1;
+		}
+	}
+	if($f==0){
+	echo $i." </br>";
+	}
+
+}
+
+			
+
+
