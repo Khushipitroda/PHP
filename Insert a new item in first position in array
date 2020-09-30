@@ -1,0 +1,23 @@
+//Insert a new item in first position.
+<?php
+	$num = array(30,32,43,67,76);
+	$arrlen = count($num);
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b>Array Before Inserting the Element: </b><br/>";
+	for($i = 0; $i< $arrlen; $i++) {
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b><br>Array After Inserting an element at First Position :</b><br/>";
+	for($i = count($num); $i> 0; $i--) {
+		$num[$i] = $num[$i-1];
+	}
+	$num[0] = 0;
+	for($i = 0; $i< count($num); $i++){
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+?>
+
+
