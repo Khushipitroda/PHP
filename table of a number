@@ -1,0 +1,10 @@
+//Write a PHP program to print table of a number.
+
+//CODE:
+
+<?PHP
+$val = 19;
+echo "<h1>Table of ".$val." is</br></h1>";
+for($no = 1; $no <=10; s$no++){
+	echo "<h1>".$val." * ".$no." = ".$no*$val ."</br></h1>";
+}
