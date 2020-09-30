@@ -1,0 +1,81 @@
+//Write a PHP program to demonstrate the use of all inbuilt Math functions with their purpose, syntax and examples.
+//CODE:
+<?php
+<?PHP
+//Write a PHP program to demonstrate the use of all inbuilt Math functions with their purpose, syntax and examples.
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//abs()	Returns the absolute (positive) value of a number
+echo "abs()<br>";
+echo(abs(6.7) . "<br>");
+echo(abs(-6.7) . "<br>");
+echo(abs(-3) . "<br>");
+echo(abs(3));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//ceil()	Rounds a number up to the nearest integer
+echo "ceil()<br>";
+echo(ceil(0.60) . "<br>");
+echo(ceil(0.40) . "<br>");
+echo(ceil(5) . "<br>");
+echo(ceil(5.1) . "<br>");
+echo(ceil(-5.1) . "<br>");
+echo(ceil(-5.9));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//exp()	Calculates the exponent of e
+echo "exp()<br>";
+echo(exp(0) . "<br>");
+echo(exp(1) . "<br>");
+echo(exp(10) . "<br>");
+echo(exp(4.8));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//floor()	Rounds a number down to the nearest integer
+echo(floor(0.60) . "<br>");
+echo(floor(0.40) . "<br>");
+echo(floor(5) . "<br>");
+echo(floor(5.1) . "<br>");
+echo(floor(-5.1) . "<br>");
+echo(floor(-5.9));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//hexdec()	Converts a hexadecimal number to a decimal number
+echo "hexdec()<br>";
+echo hexdec("1e") . "<br>";
+echo hexdec("a") . "<br>";
+echo hexdec("11ff") . "<br>";
+echo hexdec("cceeff");
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//max()	Returns the highest value in an array, or the highest value of several specified values
+echo "max()</br>";
+echo(max(2,4,6,8,10) . "<br>");
+echo(max(22,14,68,18,15) . "<br>");
+echo(max(array(4,6,8,10)) . "<br>");
+echo(max(array(44,16,81,12)));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//min()	Returns the lowest value in an array, or the lowest value of several specified values
+echo "min()</br>";
+echo(min(2,4,6,8,10) . "<br>");
+echo(min(22,14,68,18,15) . "<br>");
+echo(min(array(4,6,8,10)) . "<br>");
+echo(min(array(44,16,81,12)));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//pow()	Returns x raised to the power of y
+echo "pow()</br>";
+echo(pow(2,4) . "<br>");
+echo(pow(-2,4) . "<br>");
+echo(pow(-2,-4) . "<br>");
+echo(pow(-2,-3.2));
+echo "<br>-----------------------------------------------------------------------------------------------------------------<br>";
+//round()	Rounds a floating-point number
+echo "round()</br>";
+echo(round(0.60) . "<br>");
+echo(round(0.50) . "<br>");
+echo(round(0.49) . "<br>");
+echo(round(-4.40) . "<br>");
+echo(round(-4.60));
+echo "<br>----------------------------------------------------------------------------------------------<br>";
+//sqrt()	Returns the square root of a number
+echo "sqrt()</br>";
+echo(sqrt(0) . "<br>");
+echo(sqrt(1) . "<br>");
+echo(sqrt(9) . "<br>");
+echo(sqrt(0.64) . "<br>");
+echo(sqrt(-9));
+?>
