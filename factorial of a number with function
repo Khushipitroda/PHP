@@ -1,0 +1,13 @@
+//Write a PHP function to calculate the factorial of a number (a non-negative integer).The function accepts the number as an argument.
+
+//CODE:
+<?php
+function factorial($no){
+	$ans=1;
+	for($i=1;$i<=$no;$i++){
+		$ans=$ans*$i;
+	}
+	return $ans;
+}
+$fact = factorial(5);
+echo "<h1>Factorial of 5 is ".$fact."</h1>";
