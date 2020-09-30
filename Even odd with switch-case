@@ -1,0 +1,15 @@
+//Write a PHP program to find whether the given number is even or odd using swith-case control.
+
+//CODE:
+<?php
+echo "<h1>";
+$no=0;
+switch($no){
+case 0:echo"Zero";
+		break;
+case ($no%2==0):echo"even";
+		break;
+case($no%2!=0):echo"odd";
+		break;
+}
+echo "</h1>";
