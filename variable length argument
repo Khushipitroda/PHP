@@ -1,0 +1,10 @@
+//Write a PHP program to print all arguments passed to the function using variable length arguments concept.
+
+//CODE:
+<?php
+function disp(...$no) {  
+    foreach ($no as $n) {  
+		echo "<h3>".$n."</br></h3>";
+    }  
+}  
+disp(31,43.42,'K',"Khushi") ;
