@@ -1,0 +1,25 @@
+//•	Insert a new item in an array in any position.
+<?php
+<?php
+$num = array(30,32,43,67,76);
+	$arrlen = count($num);
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b>Array Before Inserting the Element: </b><br/>";
+	for($i = 0; $i< $arrlen; $i++) 
+	{
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}
+	$pos=2;
+	$val=81;
+	for($i = $arrlen; $i> $pos; $i--) {
+		$num[$i] = $num[$i-1];
+	}
+	$num[$pos] = $val;
+	echo "---------------------------------------------------------------------------------------</br>";
+	echo "<b>Array After Inserting an Element at position 3 : </b><br/>";
+	for($i = 0; $i< $arrlen+1; $i++){
+		echo "[".$i."] =" .$num[$i];
+		echo "<br>";
+	}	
+?>
