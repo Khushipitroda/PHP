@@ -1,0 +1,18 @@
+//Write a PHP program to merge (by index) the following two arrays.
+
+//CODE:
+<?php
+ $Num_array1 = array("hello", 12, 13,"hi");
+ $Num_array2 = array("students",50,60,70);
+ for($i=count($Num_array1);$i<count($Num_array2);$i++);
+ {
+	for($j=0;$j<count($Num_array2);$j++){
+		$val=$Num_array2[$j];
+		array_push($Num_array1,$val);
+	}
+ }
+//$Num_array1=array_merge($Num_array1,$Num_array2);
+
+for($j=0;$j<count($Num_array1);$j++){
+	echo "array[".$j."] = ".$Num_array1[$j]."</br>";
+}
