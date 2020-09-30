@@ -1,0 +1,12 @@
+//Write a PHP program to print factorial of a number.
+
+//CODE:
+
+<?PHP
+	$no=5;
+	$ans=1;
+	while($no>=1){
+		$ans=$no*$ans;
+		$no=$no-1;
+	}
+	echo "<h1>Factorial of 5 = ".$ans."</h1>";
