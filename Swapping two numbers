@@ -1,0 +1,29 @@
+//Write a PHP program to swap two numbers with and without using third variable.
+
+//CODE:
+
+<?php
+$a=10;
+$b=22;
+echo "<h1>";
+echo "With third variable</br>";
+echo "Value before swapping a = ".$a." b = ".$b;
+$c=0;
+$c=$a;
+$a=$b;
+$b=$c;
+echo "</br>Value after swapping a = ".$a." b = ".$b."</br>";
+//without third variable
+echo "</br>Without third variable</br>";
+echo "Value before swapping a = ".$a." b = ".$b;
+$a=$a^$b;
+$b=$a^$b;
+$a=$a^$b;
+echo "</br>Value after swapping a = ".$a." b = ".$b;
+echo "</h1>";
+/*$a=$a+$b;
+$b=$a-$b;
+$a=$a-$b;*/
+
+
+
