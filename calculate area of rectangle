@@ -1,0 +1,40 @@
+//Write a PHP function to calculate the area of rectangle with following conditions.
+//CODE:
+<?php
+//Define function without arguments and without return value.
+function area1(){
+	$length=10;
+	$width=20;
+	$ans = $length*$width;
+	echo "AREA=".$ans;
+}
+//Define function with arguments and without return value.
+function area2($length,$width){
+	$ans = $length*$width;
+	echo "AREA=".$ans;
+}
+//Define function without arguments and with return value.
+function area3(){
+	$length=66;
+	$width=43;
+	return $length*$width;
+}
+//Define function with arguments and with return value.
+function area4($length=1,$width=35){
+	return $length*$width;
+}
+echo "<h3>";
+echo "without arguments and without return value.</br>";
+area1();
+echo "</br>----------------------------------------------------------------------------------------</br>";
+echo "with arguments and without return value.</br>";
+area2(44,53);
+echo "</br>----------------------------------------------------------------------------------------</br>";
+echo "without arguments and with return value.</br>";
+$ans = area3();
+echo "AREA=".$ans;
+echo "</br>----------------------------------------------------------------------------------------</br>";
+echo "with arguments and with return value.</br>";
+$ans2 = area4();
+echo "AREA=".$ans2;
+echo "</h3>";
