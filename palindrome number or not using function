@@ -1,0 +1,23 @@
+//Write a PHP function to check the given number is palindrome number or not.
+
+//CODE:
+<?php
+function palindrome($no){
+	$temp=$no;
+	$ans=0;
+	while($no>0){
+		$mod=$no%10;
+		$ans=$ans*10+$mod;
+		$no=(int)($no/10);
+	}
+	if($temp==$ans){
+		echo "<h1>".$temp." is palindrom</h1>";
+	}
+	else{
+		echo "<h1>".$temp." is not a palindrom</h1>";
+	}
+}
+palindrome(121);
+palindrome(123);
+?>
+		
