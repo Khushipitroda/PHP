@@ -4,10 +4,20 @@
 
 <?php
 $year=2021;
-if($year%4==0){
+if((0 == $year % 4) & (0 != $year % 100) | (0 == $year % 400)){
 	echo "this is leap year";
 }
 else{
 	echo"not leap year";
 }
+/*or
+If (isLeap($year))  
+    {  
+        echo "$year : LEAP YEAR<br />\n";  
+    }  
+    else  
+    {  
+        echo "$year : Not leap year<br />\n";  
+    }  */
+?>
 
