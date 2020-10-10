@@ -1,0 +1,15 @@
+<?php 
+echo "<h1>";
+if (!isset($_COOKIE['count'])){
+	echo"</br></br>Welcome! This is the first time you have viewed this page according to cookie";
+	$cookie = 1;
+	setcookie("count", $cookie);
+}
+else{
+	$cookie = ++$_COOKIE['count'];
+	setcookie("count", $cookie);
+	
+echo"Views according to cookie= ".$_COOKIE['count']; 
+}          
+echo "</h1>";
+?>
