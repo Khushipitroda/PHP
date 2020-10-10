@@ -1,0 +1,13 @@
+<?php
+$min = "1 Minute";
+$tenmin = "10 Minute";
+$hour = "1 Hour";
+$day = "1 Day";
+$month = "1 Month";
+setcookie("Minute",$min,time()+60);
+setcookie("Ten_Minute",$tenmin,time()+60*10);
+setcookie("Hour",$hour,time()+60*60);
+setcookie("Day",$day,time()+60*60*24);
+setcookie("Month",$month,time()+60*60*24*30);
+echo "<h1>cookies created</h1>";
+?>
