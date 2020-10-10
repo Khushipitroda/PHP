@@ -1,0 +1,8 @@
+<?php
+foreach($_COOKIE as $key=>$val){
+	echo "<h1>";
+	print $key."=>".$val;
+	echo"</br>";
+	echo"</h1>";
+}
+?> 
