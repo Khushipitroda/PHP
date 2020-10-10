@@ -1,0 +1,8 @@
+<?php
+echo "<h1>";
+foreach($_COOKIE as $key=>$val){
+	setcookie($key, "", time() - 7200);
+	echo $key."=>".$val."   Deleted</br>";
+}
+echo "Cookies deleted!</h1>";
+?>
