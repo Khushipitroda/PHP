@@ -1,0 +1,14 @@
+<?php 
+echo "<h1>";
+session_start(); 
+if(!(isset($_SESSION['views']))){
+	echo"Welcome! This is the first time you have viewed this page according to session </br>";
+	$_SESSION['views']=1; 
+}
+else{
+	$_SESSION['views'] = $_SESSION['views']+1; 
+	
+echo"Views according to session= ".$_SESSION['views']."</br>"; 
+}
+echo "</h1>";
+?>
