@@ -1,0 +1,31 @@
+//save this file name with cookie.php
+<?php
+$name=$_POST["name"];
+$psw=$_POST["psw"];
+setcookie("name",$name,time()+180);
+setcookie("psw",$psw,time()+180);
+echo "<h1>cookies created</h1>";
+?>
+
+/*
+create this file first save as form.php run it on xampp when you click to login it will be redirected to cookie.php
+for accessing cookie see program named access cookie
+<html>
+<head>
+<title>Cookie</title>
+<body>
+		<form method="post" action="cookie.php">
+	<div class="my">
+		<h1>Login</h1>
+		<label class="required" >Username</label></br>
+		<input type="text" name="name"class="new"required pattern=".{6,}" >
+		<h6  class="textbox">At least 6 charater</h6></br>
+		<label class="required">Password</label></br>
+		<input type="password" id=" psw" class="new"name="psw" pattern=".{6,}"title="Must contain at least one number and one uppercase and lowercase letter" required>
+		<h6  class="textbox">Use Upper and Lowers letters as well</h6></br></br>
+		<center><input type="submit" value="Login" class="hi" ></center>
+	</div>
+</form>
+</body>
+</html>
+*/
